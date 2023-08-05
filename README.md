@@ -30,3 +30,13 @@ rust_calculator  latest  efcf1758c197   28.8MB
 ```
 
 ## Python
+### Local dev setup
+- We will use conda to create a virtual environment and install dependencies.
+- Install conda using [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/)
+- cd into `python_calculator` directory
+- Execute below commands to setup the environment
+```commandline
+conda create -n python_calculator python=3.10
+conda activate python_calculator
+pip install -r requirements.txt -r requirements-test.txt
+```
