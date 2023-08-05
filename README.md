@@ -11,6 +11,8 @@ Repository contains code for calculator micro services developed using Python an
 ### Build and Run in local
 - cd into `rust_calculator` directory and execute `docker build -t rust_calculator:latest .` to build the docker image
 - Execute `docker run -p 8080:8080 rust_calculator:latest` to run the server in local
+- curl `http://localhost:8080/health` to check the health of the server
+- curl `http://localhost:8080/add?num1=1&num2=2` to add two numbers
 
 ### Docker image size evolution:
 - 5 August 2023 - After adding `add()` function and `serde` dependency.
