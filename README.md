@@ -8,4 +8,7 @@ Repository contains code for calculator micro services developed using Python an
 3. cd into `rust_calculator` directory
 4. Execute `cargo run` to start the server
 
+## Build and Run in local
+- cd into `rust_calculator` directory and execute `docker build -t rust_calculator:latest .` to build the docker image
+- Execute `docker run -p 8080:8080 rust_calculator:latest` to run the server in local
 ## Python
