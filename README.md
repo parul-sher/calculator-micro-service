@@ -40,3 +40,11 @@ conda create -n python_calculator python=3.10
 conda activate python_calculator
 pip install -r requirements.txt -r requirements-test.txt
 ```
+### Build and Run in local
+- cd into `python_calculator` directory
+- Execute `flask --app src/main.py run` to start the server
+- curl `http://localhost:5000/health` to check the health of the server
+- curl `http://localhost:5000/add?num1=1&num2=2` to add two numbers
+- curl `http://localhost:5000/subtract?num1=1&num2=2` to subtract two numbers
+- curl `http://localhost:5000/multiply?num1=1&num2=2` to multiply two numbers
+- curl `http://localhost:5000/divide?num1=1&num2=2` to divide two numbers
