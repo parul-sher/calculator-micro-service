@@ -2,6 +2,7 @@ from flask import Flask, request
 from datetime import datetime
 
 app = Flask(__name__)
+print("INFO: Starting Flask Server at http://localhost:5000")
 
 
 @app.route('/health')

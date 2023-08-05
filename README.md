@@ -43,8 +43,22 @@ pip install -r requirements.txt -r requirements-test.txt
 ### Build and Run in local
 - cd into `python_calculator` directory
 - Execute `flask --app src/main.py run` to start the server
+
+### Build and run in Docker:
+- cd into `python_calculator` directory
+- Execute `docker build -t python_calculator:latest .` to build the docker image
+- Execute `docker run -p 5000:5000 python_calculator:latest` to run the server in docker container
+
+### Run in local or in docker:
 - curl `http://localhost:5000/health` to check the health of the server
 - curl `http://localhost:5000/add?num1=1&num2=2` to add two numbers
 - curl `http://localhost:5000/subtract?num1=1&num2=2` to subtract two numbers
 - curl `http://localhost:5000/multiply?num1=1&num2=2` to multiply two numbers
 - curl `http://localhost:5000/divide?num1=1&num2=2` to divide two numbers
+
+### Docker image size evolution:
+- 5 August 2023 - After adding `add()`, `subtract()`, `multiply()`, `divide()` functions and `flask` dependency.
+```commandline
+REPOSITORY          TAG       IMAGE ID       SIZE
+python_calculator   latest    5e9998a179e4   1.02GB
+```
