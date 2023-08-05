@@ -10,4 +10,6 @@ FROM gcr.io/distroless/cc-debian10
 
 COPY --from=builder /usr/local/cargo/bin/rust_calculator /usr/local/bin/rust_calculator
 
+EXPOSE 8080
+
 CMD ["rust_calculator"]
