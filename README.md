@@ -56,7 +56,7 @@ pip install -r requirements.txt -r requirements-test.txt
 - curl `http://localhost:5000/multiply?num1=1&num2=2` to multiply two numbers
 - curl `http://localhost:5000/divide?num1=1&num2=2` to divide two numbers
 
-### Docker image size evolution:
+### Docker image size evolution-vasu:
 - 5 August 2023 - After adding `add()`, `subtract()`, `multiply()`, `divide()` functions and `flask` dependency.
 ```commandline
 REPOSITORY          TAG       IMAGE ID       SIZE
